@@ -1,0 +1,189 @@
+---
+document_id: PCR 108458 Stage 3
+document_name: PCR 108458 Stage 3.docx
+original_format: .docx
+page_count: 8
+chunk_count: 5
+---
+
+--- Page 0 ---
+
+# Project Highlights 
+
+What are the five most important results (outputs or outcomes) of this project and how have they been useful or innovative?
+
+Generated new knowledge and enhanced visibility:
+This project resulted in 14 peer reviewed publications (exceeding its target of 8 publications), 5 book chapters, 5 working papers, 2 briefing documents and 1 policy brief. Collectively, these publications have strengthened the evidence-base about urban food system governance issues in Africa. Furthermore, the project team was involved in 21 academic conference presentations, 8 policy-oriented presentations, 8 public facing presentations, 2 webinar series, 9 news articles and 7 radio interviews/podcasts. Through these platforms, the team has strongly enhanced their status as authoritative Southern voices in the urban food system space.
+
+Policy influence:
+Across the three study countries, the project received recognition across respective governance and policy circles. This was achieved by strategically engaging with relevant platforms such as the Community of Practice on Food Governance in Cape Town and the Kisumu City Management Board. In Kisumu specifically, due to policy dialogues with the City Management Board, urban food planning was integrated as a key component of the City's 2040 Vision Plan. And in Cape Town, the project team members contributed to the City's Resilience Strategy. In fact, the project PI Dr Jane Battersby played a key role in shaping Cape Town's Covid-19 response strategy. Initially, government and civil society actors were using food vouchers from major supermarkets as part of their food relief interventions. This not only forced recipients of these vouchers to change their shopping habits and forced them onto crowded taxis to reach supermarkets, but it also undermined the viability of smaller neighbourhood retailers. Based on their work on the impact of supermarketization on local retail, Dr Battersby successfully influenced these actors to use food vouchers from non- supermarket sources such as Flash (https://www.flash.co.za/).
+
+Deepened South-South research partnership:
+The project enabled the research team at University of Cape Town to lead peer-learning among researchers inside (Sol Plaatje University) and outside South Africa (University of Nairobi, University of Namibia, and Kisumu Local Interaction Platform). These kinds of South-South collaborations are essential for catalysing a community of practice in what has hitherto been an under-researched field in Sub-Saharan Africa. Indeed, around the commencement of this project, a scoping study by IDRC's Food Environment and Health program found that research capacity on urban food systems was quite strong in South Africa but not so much across the rest of the sub-continent. Therefore, the program was deliberate in encouraging South-South collaboration between South African researchers and their counterparts elsewhere in Africa. Overall, the leadership provided by this project's South African team, and their willingness to engage and support colleagues in Kenya and Namibia was both exemplary and effective.
+
+Strengthened local research capacity:
+The project aimed to support 5 Masters studentship. By completion, 2 Masters dissertations had been submitted for final examination and 1 was delayed by the Covid-19 pandemic. Opportunities arose to
+
+--- Page 1 ---
+
+support 2 PhD students rather than providing Masters studentships. Both doctoral students are in the process of completing their studies. Further, project material and theoretical framings have been integrated into various course curricula across the collaborating institutions. For example, the project PI Dr Jane Battersby incorporated the project's conceptual approaches into a course Urban Food Security which she teaches at the graduate level at the University of Cape Town. And at the University of Nairobi, students taking the Urban Food and Nutrition Security specialization track in the Master of Science Degree Programme in Sustainable Urban Development were integrated into the research project as part of their practical and field-based learning.
+
+Gender implications:
+One of the specific objectives of this project was to understand complex drivers of urban household food practices particularly among women. Research has shown that that women across most African countries generally have higher rates of diet-related non-communicable disease risk factors (such as obesity) than men. Moreover, food purchasing and preparation is highly gendered and women are often key food decision makers. Therefore, it was particularly important to understand their lived experiences with a view to empowering them to become more influential actors in the urban food governance space. The findings related to this objective are summarized in section 4 below.
+
+# Research Outputs 
+
+List up to 10 most important research outputs generated by the project. Where possible, provide the link.
+
+Outputs are the directly achievable products of a project's completed activities (e.g. policy briefs, journal articles, research papers, trained people, etc.). Indicate the project outputs that were published on an open access basis. What, if any, outputs resulting from this project will be published open access beyond the duration of the project, and it is possible that the grantee will seek further IDRC support for this?
+
+Peer reviewed publications:
+Muzenda, T., Kamkeumah, M, Battersby, J. \& Oni, T (2022) Mapping food and physical activity environments in low- and middle-income countries. Health and Place 75 (2022) 102809 https://doi.org/10.1016/j.healthplace.2022.102809
+
+Opiyo, P.O., Agong, S.G., Awuor, F.O. and Gilani, M., 2021. Urban Dynamics of Food Loss and Waste: Challenges and Opportunities for Improving Food Security in Kisumu, Kenya. Journal of Food Security, 9(1), pp.1-7 http://pubs.sciepub.com/jfs/9/1/1/
+
+Haysom, G. 2021. Integrating Food Sensitive Planning and Urban Design into urban governance actions, Urban Forum 32, pp. 289-310. https://link.springer.com/article/10.1007/s12132-021-09417-9
+
+Opiyo, P.O. and Agong, S.G. (2020) "Nexus between Urban Food System and Other Urban Systems: Exploring Opportunities for Improving Food Security in Kisumu, Kenya." Social and Economic Geography, vol. 5, no. 1 20-28. doi: 10.12691/seg-5-1-4. http://pubs.sciepub.com/seg/5/1/4/
+
+Moseley, W.G. \& Battersby, J. (2020) The vulnerability and resilience of African food systems, food security and nutrition in the context of the context of the COVID-19 pandemic, African Studies Review, 63 (3) 449-461, doi: https:/doi.org/10.1017/asr.2020.72
+
+--- Page 2 ---
+
+Battersby, J. (2020) South Africa's lockdown regulations and the reinforcement of anti-informality bias, Agriculture and Human Values, 37, 543-544. https://doi.org/10.1007/s10460-020-10078-w
+
+Hunter Adams, J. \& Battersby, J. (2020) Health care providers' perspectives of diet-related non-communicable disease in South Africa, BMC Public Health. 20: 262
+https://doi.org/10.1186/s12889-020-8364-y
+Hunter-Adams, J., Battersby, J. \& Oni, T. (2019) Food insecurity in relation to obesity and hunger in peri-urban Cape Town, South Africa, Appetite, 137, 244-249
+https://doi.org/10.1016/j.appet.2019.03.012
+Haysom, G., Olsson, E.G.A., Dymitrow, M., Opiyo, P., Taylor Buck, N., Oloko, M., Spring, C., Fermskog, K., Ingelhag, K., Kotze, S., Agong', S.G. (2019) Food Systems sustainability: An examination of different viewpoints on food system change, Sustainability, 11, 1-17. https://doi.org/10.3390/su11123337
+
+Policy brief:
+Opiyo P.O. and Agong S.G. Urban Food Security in Kisumu in light of COVID19. Nourishing Spaces Project Policy Brief \#1 | July 2020. African Centre for Cities, Cape Town. https://www.africancentreforcities.net/urban-food-security-in-kisumu-in-light-of-covid19/
+
+If appropriate, explain why outputs were not completed or were of poor quality.
+Provide an explanation of why the project did not create quality outputs. It is not necessary to go through each output of the project.
+
+The key project outputs were completed as intended and were of acceptable quality.
+Project Outcomes
+How does the project contribute to the field of study / research area?
+Why was this research important to fund? What were the key scientific findings? What occurred as a result of this project?
+
+The project sought to improve our understanding of the urban drivers of dietary patterns and NCDs, and thus to develop local policy responses and capacitate local communities to exercise agency over their food systems and their health.
+
+The project's primary research focussed on food consumption and health, food environments and governance of these dimensions. The key findings are as follows:
+
+Urban household food consumption patterns are complex and are shaped by individual and community histories and social practices and knowledges, as well as economic, local food environment, infrastructural and other factors. This therefore requires locally engaged, multi-sectoral engagement with diet quality particularly at the sub-national scale.
+
+Diet quality is not a high priority for low-income urban women and food is viewed both as a form of expenditure that can be discounted, but also as an agent of comfort and care, a bearer of culture, and many other (at times contradictory) things. For example, in a Nairobi informal settlement, household interviews revealed that people were only concerned about they eat after falling sick and being advised
+
+--- Page 3 ---
+
+by a doctor to follow a particular food regime. The project therefore argues for new approaches to diet related messaging and guidance from health practitioners, and new forms of inclusion of community voices in health messaging.
+
+The stocking practices of informal food retailers were shaped by perceived demand from consumers and the need to be responsive to consumer needs in order to remain in business. The choice to stock fresh and perishable products versus processed products with longer shelf life was heavily influenced by infrastructural (storage and refrigeration) constraints. It was further found that there are complex relationships to formal governance. Specifically, it was found that informal food retailers were hesitant to engage in ongoing food governance processes on the basis of negative experiences with government actors that had targeted their business in the past. This makes it difficult to bring these actors into food governance discussions. Yet, these informal food businesses play a range of important roles within their communities such as a place where parents can keep house keys for kids returning from school or providing food on credit to struggling families. The project therefore argues that finding ways to engage informal food sector actors in local planning processes is not only important but may be catalytic.
+
+The governance and policy analysis work found that governance actors at the local scale do not see food systems and diet-related issues (outside of food security) as part of their core mandates, and that this perception is reinforced by global and national frameworks and policies. The project also found limited appetite for community mobilization around food systems and NCD issues, in part due to the pervasive framing of NCDs as "lifestyle issues" rather than systemic issues, and in part due to the presence of multiple other challenges perceived to be more pressing.
+
+Possibly the most significant outcome of the project has been the progress made by the team in embedding food systems work in local and provincial government agendas, as well as the inclusion of projects learnings in a number of global food governance reports such as Global Nutrition Report 2020. Overall, the project PI and her team have enhanced their visibility as thought leaders in the urban food governance space. This enhanced visibility is bearing fruit. For example, the PI was invited to provide technical assistance to initiatives by the World Bank, UN Habitat and Global Alliance for Improved Nutrition.
+
+How would you compare the intended and actual results of the project? Why did it happen that way?
+Were there any unintended outcomes of the project? Did the project evolve differently as detailed in the project approval document? Why did the unintended outcomes occur? What was the impact?
+
+The were no unintended outcomes from the project. Early on, the project had to modify the focus of one of its secondary work packages. In the approved proposal, the team had intended to conduct some analysis on taxation of sugar sweetened beverages in South Africa. However, there were concerns that this work package could duplicate activities in another project in South Africa (108424 - Evaluation of South Africa's excise tax on sugar-sweetened beverages). The PI thus sought and received approval from the responsible officer (Sam Oti) to modify this work package. The new work package focused on reviewing available epidemiological tools for measuring and tracking adolescent nutrition-related knowledge, practices, and experiences. This was an important contribution because research on adolescent nutrition is underdeveloped across much of Africa.
+
+--- Page 4 ---
+
+Also, the project had intended to initiate the process of setting up what they called Food System Committees in each of the six study sites. Per the project proposal, these committees were to be set up through participatory action research to identify and engage potential committee members. These committees would be mandated to identify neighbourhood scale food systems interventions which could be addressed by local community action or by advocacy towards their respective local governments. The feasibility and viability of the committees was then to be determined by a continuous consultative process with local stakeholders. The project made only limited progress towards the establishment of these committees due to project delays described previously. Nevertheless, based on insights from analysing the project data, the team proposed that going forward the Committees could be embedded in in existing community structures such Community Health Committees under the Ministry of Health in Kenya.
+
+How did this project contribute to one or more of IDRC's strategic objectives?
+Refer to the 2015-2020 Strategic Plan if the project was developed and implemented under the old IDRC strategy.
+
+Refer to the 2030 Strategy if the project is developed and implemented under the new IDRC strategy.
+Provide specific numbers where possible.
+Investing in knowledge and innovation for large scale change:
+This project contributed to a significant body of knowledge regarding urban food system governance in Africa. Its contribution to the evidence-base was quite astounding: 14 peer reviewed publications (exceeding its target of 8 publications), 5 book chapters, 5 working papers, 2 briefing documents and 1 policy brief.
+
+Build the leaders for today and tomorrow:
+The project supported 2 PhD students, 2 Masters students and 1 honors student. Further, the project contributing to enhancing the visibility of the project team as authoritative thinkers in the urban food system space. Six out of 11 researcher were women including the PI Dr Jane Battersby, Dr Ndeyapo Nickanor (University of Namibia), Dr Carina Truyts (Sol Plaatjie University), Dr. Jo Hunter Adams (UCT), Dr. Theresa Mbatia (University of Nairobi) and Prof Tolu Oni (UCT).
+
+Objectives
+Provide a comment only if the objective scored 1 or 2.
+Meeting Project Objectives
+On a scale of 1 to 4 (1 indicating that the project did not meet the objective and 4 indicating that it fully met the objective), please rate the achievement of each project objective.
+
+General Objective: The overall project objective is to develop urban-scale food systems interventions aimed at preventing diet-related non-communicable diseases (NCDs) in six cities in three African countries - Kenya (Nairobi and Kisumu), South Africa (Cape Town and Kimberley), and Namibia (Windhoek and Oshakati).
+
+4 Fully met 321 Not met
+
+--- Page 5 ---
+
+# Comment: 
+
+Specific Objective 1: To review the current state of evidence regarding food systems, NCDs and their interactions in the case study countries.
+
+4 Fully met 321 Not met
+Comment:
+Specific Objective 2: To map the local formal and informal food retail environment in order understand the interactions between urban infrastructure and food retail.
+
+4 Fully met 321 Not met
+Comment:
+Specific Objective 3: To investigate consumption trends, food choices and experiences with NCDs in order to understand the complex drivers of urban household food practices.
+
+4 Fully met 321 Not met
+Comment:
+Specific Objective 4: To analyse urban and national policies and strategies relevant to food systems, and to understand local government perspectives on their role in food system governance.
+
+4 Fully met 321 Not met
+Comment:
+Specific Objective 5: To support local government and community stakeholders to utilize locally derived research evidence to develop action plans and interventions for preventing diet-related NCDs.
+
+4 Fully met 321 Not met
+Comment:
+Financial performance
+Are there any lessons or observations about the granting process, the financial performance of the project, or IDRC's administration of the project that could inform future programming or Centre processes?
+
+No significant issues with financial performance. Project needed a six month no cost extension to make up for time lost due to delays in getting ethical approval in one of the project sites and from the impact of the Covid-19 pandemic (see below).
+
+## Strategic Considerations
+
+Were the risk mitigation strategies outlined in the Project Approval Document effective? Were there any unanticipated risks that affected the project?
+
+The onset of the Covid-19 pandemic in March 2020 disrupted data analysis and in-person dissemination activities that were planned for the final months of the project. This partially contributed to the need for a six month no-cost extension. Nevertheless, the project switched to virtual methods and
+
+--- Page 6 ---
+
+ended up meeting its objectives and becoming quite prolific in terms of knowledge outputs.
+Are there any lessons arising from the assessment and management of research ethics in the project? You may wish to comment on institutional ethics review process efficacy and capacities; institutional and research team ethics oversight throughout the project; ethics training in the project; role of the IDRC program team and ACRE as appropriate; unforeseen ethical issues and how they were managed.
+
+There were initial delays in getting ethical clearance, specifically in Namibia. The process took longer than was anticipated because the University Research Ethics Committee (UREC) at University of Namibia failed to meet at all in the first half of 2018. The sub-grantee could not ascertain why. There was also an additional requirement for the Ministry of Health in Namibia to endorse any ethical clearance granted by the UREC. Even though this second layer of approval was anticipated it was affected by the delays with getting the UREC approval. Eventually the clearance was obtained but this contributed partially to the project needing a six month no cost extension.
+
+# Director comments 
+
+The relevant Program Division or Regional Director should provide specific comments on the project, and to formally approve the report and its contents.
+
+Important work on addressing non-communicable diseases in a systemic approach, engaging local and national governance structures. The amount of research produced in this project is commendable, with south-south collaboration and embedded capacity strengthening efforts for upcoming researchers. Despite the challenge of effectively engaging informal food traders, the project's attempt to understand healthy food markets beyond supermarkets is noteworthy, particularly in the current economic context of increasingly rising food costs in the project countries.
+
+The PCR is formally approved
+Kathryn Toure, IDRC Regional Director, Nairobi
+Action Items / Next Steps
+Not applicable.
+Distribution list
+Specify individuals with whom this PCR should be shared. At a minimum, the report should be shared with the program team, Director of Program Division, Executive Assistant to the Director of Program Division, relevant Regional Director, Vice-President Programs, Executive Assistant to the Vice-President Programs, Grants Administration Officer, Senior Programs Advisor of Strategy Regions and Policy, Manager for Monitoring Evaluation and Learning
+
+Director GH: John Dusabe-Richards
+Regional Director, ESARO: Kathryn Toure
+Global Health Team
+Communications: Angela Baiya
+VP PPB: Dominique Charron
+
+--- Page 7 ---
+
+VP SRP: Julie Shouldice
+Executive Assistant to VP PBB: Ida St-Martin
+Executive Assistant to VP SRP: Geneviève Gagnon
+GAD: Anne-Marie Butuba, Andre Lavoie
+Notes
+Any key documents can be included as an annex.
+Project completion reports are internal and confidential documents.
+

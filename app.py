@@ -1,0 +1,279 @@
+import streamlit as st
+import json
+from pathlib import Path
+from typing import Dict, List
+import re
+
+OUTCOME_COLORS = {
+    'Knowledge Production': '#E3F2FD',
+    'Development and Testing of Innovations': '#BBDEFB',
+    'Improved Understanding of Climate and Food System Issues and Policy Solutions': '#90CAF9',
+    'Equitable Partnerships and Networks': '#64B5F6',
+    'Gender Equality and Inclusion Capacity': '#42A5F5',
+    'Strengthening Diverse Southern Perspectives': '#2196F3',
+    'Financial Resources Mobilized': '#1976D2',
+    'Informing Policy': '#C8E6C9',
+    'Informing Practice': '#A5D6A7',
+    'Sustained Gender Equality and Inclusion Transformations': '#81C784',
+    'Southern Voice and Leadership': '#66BB6A',
+}
+
+MARKDOWN_PATHS = {
+    'LVIF_PCRs': Path('data/LVIF_PCRs'),
+    'Unclassified_Cohort_PCRs_2022-2023': Path('data/Unclassified_Cohort_PCRs_2022-2023'),
+    'Unclassified_Cohort_PCRs_2024-2025': Path('data/Unclassified_Cohort_PCRs_2024-2025')
+}
+
+def load_dataset(dataset_path: Path) -> List[Dict]:
+    with open(dataset_path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+def load_markdown_document(cohort_raw: str, filename: str) -> str:
+    base_path = MARKDOWN_PATHS.get(cohort_raw)
+    if not base_path or not base_path.exists():
+        return None
+    
+    md_filename = filename.rsplit('.', 1)[0] + '.md'
+    md_path = base_path / md_filename
+    
+    if not md_path.exists():
+        return None
+    
+    with open(md_path, 'r', encoding='utf-8') as f:
+        return f.read()
+
+def highlight_quote_in_text(text: str, quote: str, color: str, quote_id: str) -> str:
+    if not quote or not quote.strip():
+        return text
+    
+    escaped_quote = re.escape(quote.strip())
+    pattern = re.compile(escaped_quote, re.IGNORECASE | re.DOTALL)
+    
+    highlighted = pattern.sub(
+        f'<mark id="{quote_id}" style="background-color: {color}; padding: 2px; border: 2px solid #FF6B00;">{quote.strip()}</mark>',
+        text
+    )
+    return highlighted
+
+def build_document_html(markdown_text: str, active_outcome: Dict = None) -> str:
+    html_text = markdown_text.replace('\n', '<br>')
+    
+    if active_outcome:
+        quotes = active_outcome.get('quotes', [])
+        color = OUTCOME_COLORS.get(active_outcome['outcome_type'], '#FFFF00')
+        
+        for idx, quote in enumerate(quotes):
+            quote_id = f"quote_{idx}"
+            html_text = highlight_quote_in_text(html_text, quote, color, quote_id)
+    
+    return html_text
+
+st.set_page_config(layout="wide", page_title="CRFS Outcomes Viewer")
+
+st.title("CRFS Outcomes Dataset Viewer")
+
+if 'selected_outcome' not in st.session_state:
+    st.session_state.selected_outcome = None
+
+dataset_path = Path("outcomes_dataset.json")
+
+if not dataset_path.exists():
+    st.error(f"Dataset not found: {dataset_path}")
+    st.stop()
+
+documents = load_dataset(dataset_path)
+
+with st.sidebar:
+    st.header("Document Selection")
+    
+    all_cohorts = sorted(list(set(d['cohort'] for d in documents)))
+    cohort_options = ["All"] + all_cohorts
+    
+    selected_cohort = st.selectbox("Filter by Cohort", options=cohort_options)
+    
+    if selected_cohort == "All":
+        filtered_docs = documents
+    else:
+        filtered_docs = [d for d in documents if d['cohort'] == selected_cohort]
+    
+    if not filtered_docs:
+        st.error(f"No documents found for cohort: {selected_cohort}")
+        st.stop()
+    
+    selected_doc_idx = st.selectbox(
+        "Select Document",
+        options=range(len(filtered_docs)),
+        format_func=lambda x: f"{filtered_docs[x]['project_number']} - {filtered_docs[x]['project_name'][:60]}..." 
+            if filtered_docs[x]['project_name'] 
+            else filtered_docs[x]['filename'][:60] + "..."
+    )
+    
+    selected_doc = filtered_docs[selected_doc_idx]
+    
+    st.divider()
+    st.subheader("Document Info")
+    st.write(f"**Project:** {selected_doc.get('project_number', 'N/A')}")
+    st.write(f"**Cohort:** {selected_doc['cohort']}")
+    if selected_doc.get('cohort_confidence'):
+        st.write(f"**Confidence:** {selected_doc['cohort_confidence']:.2%}")
+    st.write(f"**Location:** {selected_doc.get('location_country', 'N/A')}")
+    
+    st.divider()
+    st.subheader("Summary Statistics")
+    
+    total_outcomes = selected_doc['outcome_count']
+    immediate_count = sum(1 for o in selected_doc['outcomes'] if o['outcome_time'] == 'immediate')
+    intermediate_count = total_outcomes - immediate_count
+    
+    st.metric("Total Outcomes", total_outcomes)
+    st.metric("Immediate", immediate_count)
+    st.metric("Intermediate", intermediate_count)
+    
+    # Show missing outcome types
+    all_immediate_types = {
+        'Knowledge Production',
+        'Development and Testing of Innovations',
+        'Improved Understanding of Climate and Food System Issues and Policy Solutions',
+        'Equitable Partnerships and Networks',
+        'Gender Equality and Inclusion Capacity',
+        'Strengthening Diverse Southern Perspectives',
+        'Financial Resources Mobilized'
+    }
+    
+    all_intermediate_types = {
+        'Informing Policy',
+        'Informing Practice',
+        'Sustained Gender Equality and Inclusion Transformations',
+        'Southern Voice and Leadership'
+    }
+    
+    found_immediate = {o['outcome_type'] for o in selected_doc['outcomes'] if o['outcome_time'] == 'immediate'}
+    found_intermediate = {o['outcome_type'] for o in selected_doc['outcomes'] if o['outcome_time'] == 'intermediate'}
+    
+    missing_immediate = all_immediate_types - found_immediate
+    missing_intermediate = all_intermediate_types - found_intermediate
+    
+    if missing_immediate or missing_intermediate:
+        with st.expander("Missing Outcome Types", expanded=False):
+            if missing_immediate:
+                st.markdown("**Immediate:**")
+                for outcome_type in sorted(missing_immediate):
+                    st.write(f"- {outcome_type}")
+            
+            if missing_intermediate:
+                st.markdown("**Intermediate:**")
+                for outcome_type in sorted(missing_intermediate):
+                    st.write(f"- {outcome_type}")
+    
+    st.divider()
+    st.subheader("Filters")
+    
+    time_filter = st.multiselect(
+        "Outcome Time",
+        ['immediate', 'intermediate'],
+        default=['immediate', 'intermediate']
+    )
+
+st.header(selected_doc.get('project_name', selected_doc['filename']))
+st.caption(f"File: {selected_doc['filename']}")
+
+col1, col2 = st.columns([1, 2])
+
+with col1:
+    st.subheader("Outcomes")
+    
+    outcomes_by_type = {}
+    for outcome in selected_doc['outcomes']:
+        if outcome['outcome_time'] not in time_filter:
+            continue
+        
+        outcome_key = f"{outcome['outcome_time']}_{outcome['outcome_type']}"
+        
+        if outcome_key not in outcomes_by_type:
+            outcomes_by_type[outcome_key] = {
+                'outcome_time': outcome['outcome_time'],
+                'outcome_type': outcome['outcome_type'],
+                'outcome': outcome
+            }
+    
+    sorted_outcomes = sorted(
+        outcomes_by_type.items(),
+        key=lambda x: (x[1]['outcome_time'], x[1]['outcome_type'])
+    )
+    
+    for outcome_key, outcome_data in sorted_outcomes:
+        outcome = outcome_data['outcome']
+        outcome_time = outcome['outcome_time']
+        outcome_type = outcome['outcome_type']
+        
+        outcome_time_label = outcome_time.title()
+        color = OUTCOME_COLORS.get(outcome_type, '#FFEB3B')
+        
+        quote_count = len(outcome.get('quotes', []))
+        button_label = f"[{outcome_time_label}] {outcome_type} ({quote_count} quotes)"
+        
+        if st.button(
+            button_label,
+            key=f"outcome_{outcome_key}",
+            use_container_width=True
+        ):
+            st.session_state.selected_outcome = outcome
+            st.rerun()
+    
+    if st.session_state.selected_outcome:
+        outcome = st.session_state.selected_outcome
+        
+        st.divider()
+        st.subheader(f"Selected: {outcome['outcome_type']}")
+        
+        with st.expander("Description", expanded=True):
+            st.write(outcome['description'])
+        
+        if outcome.get('geography'):
+            st.markdown(f"**Geography:** {outcome['geography']}")
+        
+        if outcome.get('target_population'):
+            st.markdown(f"**Target Population:** {outcome['target_population']}")
+        
+        st.markdown(f"**Evidence Count:** {outcome['evidence_count']}")
+        
+        if outcome.get('quotes'):
+            with st.expander(f"Quotes ({len(outcome['quotes'])})", expanded=False):
+                for idx, quote in enumerate(outcome['quotes'], 1):
+                    st.info(f"**Quote {idx}:**\n\n{quote}")
+
+with col2:
+    st.subheader("Source Document")
+    
+    markdown_text = load_markdown_document(selected_doc['cohort_raw'], selected_doc['filename'])
+    
+    if markdown_text:
+        active_outcome = st.session_state.selected_outcome
+        
+        html_content = build_document_html(markdown_text, active_outcome)
+        
+        if active_outcome:
+            quote_count = len(active_outcome.get('quotes', []))
+            st.info(f"Highlighting {quote_count} quote(s) for: {active_outcome['outcome_type']}")
+        
+        st.markdown(
+            f'<div style="height: 800px; overflow-y: scroll; border: 1px solid #ccc; padding: 20px; background: white;">{html_content}</div>',
+            unsafe_allow_html=True
+        )
+    else:
+        st.warning(f"Source document not available for viewing.")
+        st.write(f"Expected path: {MARKDOWN_PATHS.get(selected_doc['cohort_raw'])}")
+        
+        if selected_doc['outcomes']:
+            st.subheader("Outcome Details")
+            for outcome in selected_doc['outcomes']:
+                if outcome['outcome_time'] not in time_filter:
+                    continue
+                
+                with st.expander(f"{outcome['outcome_time'].title()} - {outcome['outcome_type']}"):
+                    st.write(outcome['description'])
+                    
+                    if outcome.get('quotes'):
+                        st.markdown("**Quotes:**")
+                        for quote in outcome['quotes']:
+                            st.info(quote)
