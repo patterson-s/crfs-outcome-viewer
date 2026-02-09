@@ -31,7 +31,6 @@ def load_dataset(dataset_path: Path) -> List[Dict]:
         return json.load(f)
 
 def normalize_filename(filename: str) -> str:
-    import re
     name = filename.rsplit(".", 1)[0]
     name = name.replace("_", " ")
     name = name.replace("[1]", "").replace("[2]", "")
@@ -192,7 +191,6 @@ with st.sidebar:
     st.metric("Immediate", immediate_count)
     st.metric("Intermediate", intermediate_count)
     
-    # Show missing outcome types
     all_immediate_types = {
         'Knowledge Production',
         'Development and Testing of Innovations',
@@ -362,4 +360,4 @@ with col2:
                     if outcome.get('quotes'):
                         st.markdown("**Quotes:**")
                         for quote in outcome['quotes']:
-                            st.info(quote)"# Cache bust" 
+                            st.info(quote)
