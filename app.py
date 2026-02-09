@@ -21,26 +21,52 @@ OUTCOME_COLORS = {
 MARKDOWN_PATHS = {
     'LVIF_PCRs': Path('data/LVIF_PCRs'),
     'Unclassified_Cohort_PCRs_2022-2023': Path('data/Unclassified_Cohort_PCRs_2022-2023'),
-    'Unclassified_Cohort_PCRs_2024-2025': Path('data/Unclassified_Cohort_PCRs_2024-2025')
+    'Unclassified_Cohort_PCRs_2024-2025': Path('data/Unclassified_Cohort_PCRs_2024-2025'),
+    'PCRs 2022-2023': Path('data/PCRs 2022-2023'),
+    'PCRs 2024-25': Path('data/PCRs 2024-25')
 }
 
 def load_dataset(dataset_path: Path) -> List[Dict]:
     with open(dataset_path, 'r', encoding='utf-8') as f:
         return json.load(f)
 
-def load_markdown_document(cohort_raw: str, filename: str) -> str:
+def normalize_filename(filename: str) -> str:
+    name = filename.rsplit('.', 1)[0]
+    name = name.replace('_', ' ')
+    name = name.replace('[1]', '').replace('[2]', '')
+    name = name.strip()
+    return name + '.md'
+
+def load_markdown_document(cohort_raw: str, filename: str, source_folder: str = None) -> str:
     base_path = MARKDOWN_PATHS.get(cohort_raw)
+    
+    if not base_path and source_folder:
+        folder_name = Path(source_folder).name
+        base_path = MARKDOWN_PATHS.get(folder_name)
+    
     if not base_path or not base_path.exists():
         return None
     
     md_filename = filename.rsplit('.', 1)[0] + '.md'
     md_path = base_path / md_filename
     
-    if not md_path.exists():
-        return None
+    if md_path.exists():
+        with open(md_path, 'r', encoding='utf-8') as f:
+            return f.read()
     
-    with open(md_path, 'r', encoding='utf-8') as f:
-        return f.read()
+    normalized_filename = normalize_filename(filename)
+    normalized_path = base_path / normalized_filename
+    
+    if normalized_path.exists():
+        with open(normalized_path, 'r', encoding='utf-8') as f:
+            return f.read()
+    
+    for md_file in base_path.glob('*.md'):
+        if normalize_filename(md_file.name) == normalized_filename:
+            with open(md_file, 'r', encoding='utf-8') as f:
+                return f.read()
+    
+    return None
 
 def highlight_quote_in_text(text: str, quote: str, color: str, quote_id: str) -> str:
     if not quote or not quote.strip():
@@ -70,6 +96,19 @@ def build_document_html(markdown_text: str, active_outcome: Dict = None) -> str:
 
 st.set_page_config(layout="wide", page_title="CRFS Outcomes Viewer")
 
+st.markdown('''
+<style>
+[data-testid="stSidebar"] {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+.main .block-container {
+    overflow-y: auto;
+    max-height: 100vh;
+}
+</style>
+''', unsafe_allow_html=True)
+
 st.title("CRFS Outcomes Dataset Viewer")
 
 if 'selected_outcome' not in st.session_state:
@@ -86,15 +125,32 @@ documents = load_dataset(dataset_path)
 with st.sidebar:
     st.header("Document Selection")
     
-    all_cohorts = sorted(list(set(d['cohort'] for d in documents)))
+    def normalize_cohort_name(cohort: str) -> str:
+        if not cohort or cohort == 'LVIF':
+            return cohort
+        if '(probable)' not in cohort:
+            return f"{cohort} (probable)"
+        return cohort
+    
+    for doc in documents:
+        if doc.get('cohort'):
+            doc['cohort'] = normalize_cohort_name(doc['cohort'])
+    
+    all_cohorts = sorted(list(set(d['cohort'] for d in documents if d.get('cohort'))))
     cohort_options = ["All"] + all_cohorts
     
     selected_cohort = st.selectbox("Filter by Cohort", options=cohort_options)
     
-    if selected_cohort == "All":
-        filtered_docs = documents
-    else:
-        filtered_docs = [d for d in documents if d['cohort'] == selected_cohort]
+    batch_options = ["All", "1", "2"]
+    selected_batch = st.selectbox("Filter by Batch", options=batch_options)
+    
+    filtered_docs = documents
+    
+    if selected_cohort != "All":
+        filtered_docs = [d for d in filtered_docs if d['cohort'] == selected_cohort]
+    
+    if selected_batch != "All":
+        filtered_docs = [d for d in filtered_docs if d.get('processing_batch') == selected_batch]
     
     if not filtered_docs:
         st.error(f"No documents found for cohort: {selected_cohort}")
@@ -117,6 +173,10 @@ with st.sidebar:
     if selected_doc.get('cohort_confidence'):
         st.write(f"**Confidence:** {selected_doc['cohort_confidence']:.2%}")
     st.write(f"**Location:** {selected_doc.get('location_country', 'N/A')}")
+    st.write(f"**Batch:** {selected_doc.get('processing_batch', 'N/A')}")
+    
+    if selected_doc.get('duplicate') == 1:
+        st.warning("Duplicate: Batch 2 version")
     
     st.divider()
     st.subheader("Summary Statistics")
@@ -182,6 +242,16 @@ col1, col2 = st.columns([1, 2])
 with col1:
     st.subheader("Outcomes")
     
+    st.markdown('''
+    <style>
+    .outcomes-container {
+        max-height: 800px;
+        overflow-y: auto;
+        padding-right: 10px;
+    }
+    </style>
+    ''', unsafe_allow_html=True)
+    
     outcomes_by_type = {}
     for outcome in selected_doc['outcomes']:
         if outcome['outcome_time'] not in time_filter:
@@ -201,6 +271,10 @@ with col1:
         key=lambda x: (x[1]['outcome_time'], x[1]['outcome_type'])
     )
     
+    outcomes_container = st.container()
+    with outcomes_container:
+        st.markdown('<div class="outcomes-container">', unsafe_allow_html=True)
+    
     for outcome_key, outcome_data in sorted_outcomes:
         outcome = outcome_data['outcome']
         outcome_time = outcome['outcome_time']
@@ -219,6 +293,9 @@ with col1:
         ):
             st.session_state.selected_outcome = outcome
             st.rerun()
+    
+    with outcomes_container:
+        st.markdown('</div>', unsafe_allow_html=True)
     
     if st.session_state.selected_outcome:
         outcome = st.session_state.selected_outcome
@@ -245,7 +322,11 @@ with col1:
 with col2:
     st.subheader("Source Document")
     
-    markdown_text = load_markdown_document(selected_doc['cohort_raw'], selected_doc['filename'])
+    markdown_text = load_markdown_document(
+        selected_doc['cohort_raw'], 
+        selected_doc['filename'],
+        selected_doc.get('source_folder')
+    )
     
     if markdown_text:
         active_outcome = st.session_state.selected_outcome
@@ -262,7 +343,9 @@ with col2:
         )
     else:
         st.warning(f"Source document not available for viewing.")
-        st.write(f"Expected path: {MARKDOWN_PATHS.get(selected_doc['cohort_raw'])}")
+        st.write(f"cohort_raw: {selected_doc.get('cohort_raw', 'N/A')}")
+        st.write(f"source_folder: {selected_doc.get('source_folder', 'N/A')}")
+        st.write(f"filename: {selected_doc.get('filename', 'N/A')}")
         
         if selected_doc['outcomes']:
             st.subheader("Outcome Details")

@@ -1,0 +1,252 @@
+--- Page 0 ---
+
+PROJECT COMPLETION REPORT
+
+IDRC·CRDI
+
+|  Project Number and Name | 109054 - Developing pituitary adenylate cyclase-activating polypeptide into a treatment for microbial infections in fish and shrimp aquaculture.  |
+| --- | --- |
+|  Responsible Officer | Armando Heriazon  |
+|  Former Responsible Officer |   |
+|  Principal Investigator | Brian Dixon, Mark Fast and Mario Pablo Estrada Garcia  |
+|  Recipient Institution (grantee) | University of Waterloo and University of Prince Edward Island. Subgrantees Centro de Ingeniería Genética y Biotecnología y University of Havana.  |
+|  Location: Country | Canada and Cuba  |
+|  Location: Region |   |
+|  Area of research impact | Alternatives to antimicrobials  |
+|  Internal Funding | CRFS  |
+|  External Funding | DHSC  |
+|  Project Start Date | 1 April 2019  |
+|  Project Completion Date | 1 July 2023  |
+|  Program theme sector | CRFS-AH  |
+|  Strategic framework indicator |   |
+|  Author | Armando Heriazon  |
+|  Date of Report | March 2024  |
+
+# Project Abstract
+
+In 2017, aquaculture provided more than 50% of the fish humans consumed. Unlike other forms of agriculture, aquaculture occurs in uncontrolled ocean and pond water which contains many potential pathogens. Antibiotics are used for both prophylaxis and treatment of bacterial diseases and resistant strains have arisen making treatment less effective in this vital food source. Antimicrobial peptides offer an alternative treatment that is already part of the host immune response and is more difficult to develop resistance to Pituitary adenylate cyclase-activating polypeptide (PACAP) has been shown to have antimicrobial properties in humans, but its activity in aquatic animals is not well explored.
+
+This project sought to characterize and select polypeptides with immunostimulant and antimicrobial activities to protect fish and shrimp against infectious diseases in Canada and Cuba. This was planned by: a) Assessing the antimicrobial and immunostimulant activity of variants of PACAP with modifications to extend the effective lifespan of the molecule; b) Determining the dose and treatment plan which show to be the most effective in rainbow trout in Canada; and c) The information obtained from testing and optimizing the use of PACAP as an antimicrobial treatment in Canada was shared with Cuban scientists as a network platform to apply it to Cuban species of interest, including Tilapia, Claria, and shrimp. Due to the characteristics of this class of polypeptides, it has the potential to increase animal health and reduce the need for antimicrobials.
+
+# PROJECT HIGHLIGHTS
+
+1. What are the five most important results (outputs or outcomes) of this project and how have they been useful or innovative?
+
+The team completed the functional characterization, including stability of PACAP variants and selected the most efficacious and long-lasting antimicrobial and immunostimulant isoforms. Five
+
+Last Revised March 2021
+
+--- Page 1 ---
+
+PROJECT COMPLETION REPORT
+
+IDRC·CRDI
+
+variants of PACAP were tested. A dual antimicrobial and immunostimulant effects are important to ensure the fast recovery of the animals and diminishes the risk of secondary infections. The long-lasting effects of a product can facilitate its use in farming conditions.
+
+The team developed and standardized multiple assays that were important for the assessment of immune responses at the molecular level. This included the development and standardization of some challenge models. These models are used for in vivo studies to test for efficacy. Additionally, a reliable challenge model can also be used to study the pathogens and the diseases they cause.
+
+The team demonstrated that PACAP is safe for use in fish and shrimp. However, the degree of safety was different for all variants. One of the regulatory requirements is that the developed product is safe to use in the target species.
+
+The team proved the in vitro efficacy of PACAP against fish and shrimp pathogens, including Flavobacterium psychrophilum, Flavobacterium columnare, Aeromonas hydrophila, Aeromonas salmonicida, Streptococcus iniae, Vibrio anguillarum and Yersinia ruckeri. This shows that PACAP has the potential to be used against diverse infections. This is helpful, particularly when diagnosis is limited. It was also determined PACAP's mechanism of action against bacteria.
+
+The team performed efficacy studies in several fish species and shrimp. The efficacy varied between the PACAP variants. These experiments were done using different doses and delivery systems, including injection and oral administration. Survival of challenged animals was observed. Although more in vivo experiments with higher number of animals are needed, the results are promising. Efficacy studies are necessary for regulatory submission and are used in the industry as point decision to advance a product to process development.
+
+# RESEARCH OUTPUTS
+
+2. List up to 10 most important research outputs generated by the project. Where possible, provide the link.
+
+Outputs are the directly achievable products of a project's completed activities (e.g. policy briefs, journal articles, research papers, trained people, etc.). Indicate the project outputs that were published on an open access basis. What, if any, outputs resulting from this project will be published open access beyond the duration of the project, and it is possible that the grantee will seek further IDRC support for this?
+
+First in vivo evidence of pituitary adenylate cyclase-activating polypeptide antiviral activity in teleost. Fish and Shellfish Immunology. 2020. https://pubmed.ncbi.nlm.nih.gov/32334130/
+
+Monoclonal antibody against Nile Tilapia (Oreochromis niloticus) IgM heavy chain: A valuable tool for detection and quantification of IgM and  $\mathrm{IgM^{+}}$  cells. Fish and Shellfish Immunology. 2021. https://pubmed.ncbi.nlm.nih.gov/33348037/
+
+PACAP modulates the transcription of TLR-1/TLR-5/MyD88 pathway genes and boosts antimicrobial defenses in Clarias gariepinus. Fish and Shellfish Immunology. 2021. https://pubmed.ncbi.nlm.nih.gov/34146673/
+
+Oral Pituitary Adenylate Cyclase Activating Polypeptide (PACAP) formulation modified muscle fatty acid profile and cytokines transcription in head kidney in Rainbow trout (Oncorhynchus mykiss) fingerlings. Aquaculture reports. 2021 (open access). https://www.sciencedirect.com/science/article/pii/S2352513421001885
+
+The effect of PACAP-38 on LPS-induced cytokine expression in the Atlantic salmon SHK-1 cell line. Fish and Shellfish Immunology Reports. 2023 (open access). https://pubmed.ncbi.nlm.nih.gov/37753327/#:~:text=In%20this%20study%20we%20examined,24 h%20prior%20to%20LPS%20stimulation.
+
+Last Revised March 2021
+
+--- Page 2 ---
+
+PROJECT COMPLETION REPORT
+
+IDRC·CRDI
+
+Assessing impacts of two forms of PACAP-38 (pituitary adenylate cyclase-activating polypeptide) on Nile tilapia (Oreochromis niloticus) immunophysiology. Fish and Shellfish Immunology Reports. 2023 (open access - submitted).
+
+New evidence for the role of PACAP as an antimicrobial peptide in teleost fish. Antibiotics. 2023 (open access).
+https://pubmed.ncbi.nlm.nih.gov/37887185/#:~:text=We%20have%20previously%20shown%20that,vitro%20and%20in%20vivo%20experiments.
+
+Protective effects of PACAP-38 administration on cold stress and impact on gill transcriptome. Fish and Shellfish Immunology Reports. 2023 (open access – submitted).
+
+Environmental effects on fish immune systems. Elsevier, book chapter. 2023.
+
+3. If appropriate, explain why outputs were not completed or were of poor quality.
+Provide an explanation of why the project did not create quality outputs. It is not necessary to go through each output of the project.
+
+The team conducted the research with high standards and completed most of their milestones. There were three important issues that delayed the project: the COVID-19 pandemic, renovations of the aquatic facilities at the University of Waterloo and US sanctions on Cuba. This grant relied heavily on international exchanges and live animal trials, especially in the later steps. The COVID-19 pandemic resulted in over 1.5 years of campus lockdowns and restrictions on travel that delayed much of the work (especially getting Cuban COVID-19 vaccines recognized by the University of Waterloo). These affected the ability to do live fish trials, especially with tilapia as all Canadian producers went bankrupt during the pandemic.
+
+Shortly after the team started the grant (in August 2019) the University of Waterloo announced it was adhering to US financial sanctions on 5 nations, one of which was Cuba. This created some issues for buying flights and providing per diems to Cubans. The team managed to get around this by finding Canadian Bank accounts for Cubans and paying for some things on credit card (as opposed to directly from the grant).
+
+This grant relied heavily on live animal trials, but the University of Waterloo aquatic facility closed for renovations in late 2018. This was delayed by the pandemic lock downs and supply chain issues delayed that process throughout the duration of the grant. This caused the team to switch to cell line work and to move some trials to UPEI. Additionally, there has been an infectious hypodermal and hematopoietic necrosis virus (IHHNV) outbreak in shrimp since 2020 that prevented any movement of animals between facilities that also delayed work. To mitigate this problem the team decided to catch wild crayfish, which is a freshwater crustacean similar to shrimp. They were able to conduct experiments at a collaborator's facility in Mexico. Despite this problem the team was able to get some live animals to conduct the in vivo trials.
+
+## PROJECT OUTCOMES
+
+4. How does the project contribute to the field of study / research area?
+Why was this research important to fund? What were the key scientific findings? What occurred as a result of this project?
+
+Antimicrobial Resistance, at a global level, is a major threat to human and animal health. Antimicrobials play a critical role in treating mostly bacterial farm animal diseases. However, the high production farm systems and the non-prudent use of antimicrobials, in both human and veterinary medicine, are associated with the emergence and spread of antimicrobial-resistant micro-organisms (e.g. bacteria) and has been identified as a risk factor for human infectious diseases. Alternative products to antimicrobials, such as the proposed antimicrobial polypeptide named PACAP, can play a crucial role in reducing the need, and hence non-prudent use, of
+
+Last Revised March 2021
+
+--- Page 3 ---
+
+PROJECT COMPLETION REPORT
+
+IDRC·CRDI
+
+antimicrobials in animal agriculture (e.g. alternative treatment for infectious diseases). The efficacy of PACA against several important bacterial pathogens was tested in this project. These infections cause important economic losses to the aquaculture industry and raise concerns about animal welfare. Vaccines are used in fish with good results but there are not many vaccines in the market to protect against infectious diseases. Therefore, farmers rely on treating infections when they occur. On the other hand, vaccines do not work on shrimp because shellfish lack the branch of the immune system that is targeted by vaccines. Hence, treatment is the most used option against infectious disease in shrimp. Therefore, it was of extreme importance to fund this project with the hope of finding a solution.
+
+The team has generated a wealth of data and resources through this project that scientists can utilize for future funding applications. These include challenge models and in vitro assays that are scarce in the field of aquaculture. This research contributed to several areas including molecular genetics, pathology, immunology, and microbiology.
+
+# 5. How would you compare the intended and actual results of the project? Why did it happen that way?
+
+Were there any unintended outcomes of the project? Did the project evolve differently as detailed in the project approval document? Why did the unintended outcomes occur? What was the impact?
+
+The outputs above were of high quality and are commensurate to the purpose and risk level of the first phase of the project. This project generated important information that contributed to scientific knowledge in the areas of molecular biology, bacteriology, and immunology. This research advanced not only on the understanding of the diseases that affect finfish and shellfish, but also on the possible treatments that can be used. The knowledge acquired was presented in several conferences that reached students, PIs, and investors from the scientific community. Contribution of this research helps advance knowledge on aquatic pathogens and the development antimicrobial peptides for use in aquaculture. Some of the findings were not published due to intellectual property sensitivity.
+
+In general, the project evolved as planned. There were some issues, but the team implemented strategies to mitigate them. For example, due to the renovation of the aquatic facilities at the University of Waterloo, some of the experiments were overtaken by the University of Prince Edward Island. Another example is the use of wild crayfish. Crayfish was not included in the original proposal, but the team was forced to use it due to an outbreak of IHHNV. This was an excellent opportunity for the team to learn about this local species as well as it helped advance the research. Lessons learned can be transferred to other similar species used in aquaculture. Although there were deviations of some milestones, at the end the mitigations strategies taken by the team added value to the project.
+
+# 6. How did this project contribute to one or more of IDRC's strategic objectives?
+
+Refer to the 2015-2020 Strategic Plan if the project was developed and implemented under the old IDRC strategy.
+
+Refer to the 2030 Strategy if the project is developed and implemented under the new IDRC strategy. Provide specific numbers where possible.
+
+This project sought to test a technology that has been tested in humans but never in aquaculture. PACAP is a promising alternative to the use of antimicrobials, particularly because this research showed that it can be used in different aquatic species and against several pathogens. This was a discovery project and therefore, it was not expected to have a finalized product at the end of the program. The expectation was to achieve a proof-of-concept study and the team met this goal.
+
+This project tackled an important gap: lack of innovative technological solutions to address some of IDRC's Development Outcomes. Thus, the project laid the foundation upon which subsequent work will be built to ultimately contribute to IDRC's Development Outcomes, especially "improving health for all". In general, alternatives to antimicrobials contribute to the "enhancing food and
+
+Last Revised March 2021
+
+--- Page 4 ---
+
+PROJECT COMPLETION REPORT
+
+IDRC·CRDI
+
+nutrition security" development outcome by reducing animal losses from disease and contributing to a sustainable animal health system for the future. The reduction in AM use also contributes to the increase food safety. Healthy animals are also more likely to adapt to climate change. The use of polypeptides could be an important tool to improve animal health, which has a positive impact in production, and to reduce the use of antimicrobials.
+
+# 7. OBJECTIVES
+
+Provide a comment only if the objective scored 1 or 2.
+
+# Meeting Project Objectives
+
+On a scale of 1 to 4 (1 indicating that the project did not meet the objective and 4 indicating that it fully met the objective), please rate the achievement of each project objective.
+
+General Objective: To functionally characterize the potent broad-spectrum antimicrobial and immunostimulant activity of PACAP, that could be used for combatting infectious diseases in multiple aquaculture species worldwide.
+
+|  □4 Fully met | ☑3 | □2 | □1 Not met  |
+| --- | --- | --- | --- |
+|  Comment: Click here to enter text.  |   |   |   |
+|  Specific Objective 1: To complete the functional characterization, including stability, of PACAP variants and select the most efficacious and long-lasting antimicrobial and immunostimulant isoforms.  |   |   |   |
+|  □4 Fully met | ☑3 | □2 | □1 Not met  |
+|  Comment: Click here to enter text.  |   |   |   |
+|  Specific Objective 2: To test the selected PACAP isoforms in live pathogen challenges in rainbow trout (Oncorhynchus mykiss), North African catfish (Clarias gariepinus), Nile tilapia (Oreochromis niloticus), and Pacific white shrimp (Litopenaeus vannamei) to determine the optimal immune measures of effective function and assess its potential as a treatment for microbial disease.  |   |   |   |
+|  □4 Fully met | ☑3 | □2 | □1 Not met  |
+|  Comment: Click here to enter text.  |   |   |   |
+|  Specific Objective 3: Click here to enter text.  |   |   |   |
+|  □4 Fully met | □3 | □2 | □1 Not met  |
+|  Comment: Click here to enter text.  |   |   |   |
+
+# FINANCIAL PERFORMANCE
+
+Last Revised March 2021
+
+--- Page 5 ---
+
+PROJECT COMPLETION REPORT
+
+IDRC·CRDI
+
+8. Are there any lessons or observations about the granting process, the financial performance of the project, or IDRC's administration of the project that could inform future programming or Centre processes?
+
+There were no issues identified during the granting process. Two Canadian Universities were involved. The University of Waterloo partnered with scientists from Cuba to conduct the research. However, no funds were sent to Cuba. The University of Waterloo acquired equipment and donated to the Cuban team so that they could perform the research. Reagents and training were also provided to the Cuban team. The Cuban team got their own funding from the Cuban government to conduct the research. Therefore, no country clearance was needed. All financial processes went smoothly and without any problems. The teams responded quickly to all IDRC requests. Any changes required to the budget of the project were requested by the team and approved by IDRC. The financial reports have been finalized.
+
+The University of Prince Edward Island reported spending all funds under the project. This recipient reported local contributions to the project of CAD$330,000 as was committed in the Grant Agreement. As with most projects this component reallocated funds as per their needs and with previous approval from IDRC. The University of Waterloo used all the budgeted funds and reported local contributions of CAD$ 412,650 in salaries and overheads.
+
+## STRATEGIC CONSIDERATIONS
+
+9. Were the risk mitigation strategies outlined in the Project Approval Document effective? Were there any unanticipated risks that affected the project?
+
+Several risks were identified before the start of the project that were related to the technology. One of the identified risks for this project was funding Cuban institutions directly. Since the Cuban team did not request funding and the University of Waterloo had a good relationship with the Cuban team, any assistance, including training and equipment was provided through the University of Waterloo.
+
+The risks identified with the technology were mitigated by developing a proper research support package that included training on technology, regulatory, intellectual property, quality assurance, marketing / commercialization, and gender. In addition, the InnoVet-AMR team hired various consultants to evaluate the projects in several aspects, including feasibility of the technology to reach market, regulatory, intellectual property, and marketing / commercialization. The consultants provided their findings and advice to the teams.
+
+There were two big risks that were not identified before the start of the project. One was the COVID-19 pandemic, and the other one was an outbreak of IHHNV outbreak in shrimp since 2020. Both had negative impacts on the execution of the activities of the project. The IHHNV outbreak affected the acquisition of shrimp, and the team mitigated this issue by using wild crayfish. An additional issue was the renovations of the aquatic facilities at the University of Waterloo. The renovations were impacted by the COVID-19 pandemic due to restriction of movement and acquisition of material to conduct the work. This team was able to adjust their milestones by moving clinical experiments from the U. of Waterloo to UPEI after restrictions due to COVID-19 were lifted.
+
+New US sanctions on Cuba also affected mostly traveling and training. The Waterloo team managed to mitigate this problem, which allowed members from the Cuban team to visit Canada. Shipping of samples and equipment to Cuba was an identified risk and although it was impacted by US sanctions, the team was prepared.
+
+10. Are there any lessons arising from the assessment and management of research ethics in the project? You may wish to comment on institutional ethics review process efficacy and
+
+Last Revised March 2021
+
+--- Page 6 ---
+
+PROJECT COMPLETION REPORT
+
+IDRC·CRDI
+
+capacities; institutional and research team ethics oversight throughout the project; ethics training in the project; role of the IDRC program team and ACRE as appropriate; unforeseen ethical issues and how they were managed.
+
+There were no risks that emerged throughout the project or problems/challenges related to ethics. The ethics approvals were received as requested and before the start of the experiments involving animals.
+
+## Program Leader comments
+
+Program Leaders (if project falls under one of the following programs: Animal Health, Climate Resilience, Knowledge and Innovation Exchange, Health Research Partnerships) should provide specific comments on the project, its activities, achievements, and contributions to the program.
+
+This project was one of eleven IDRC funded projects which were developed through the Innovative Veterinary Solutions for antimicrobial resistance (InnoVet-AMR), a partnership with the UK Department of Health and Social Care (UK-DHSC). The objective of this initiative was to develop alternatives (including vaccines) to antibiotics in the veterinary sector. The project focused on the aquaculture sector which is one of the fastest growing industries and one where antibiotics are used in high quantity. The focus of the InnoVet-AMR 2.0 was to develop new products and therefore a series of training opportunities was developed by IDRC to accompany the research teams in the product development process toward commercialization. This project was very innovative in testing a technology used in human but not in the aquaculture production system. Hower results were not that conclusive. This project included institutions in Cuba, but it was decided to let the Canadian institution (University of Waterloo) sub-grant to them; this approach has been a good decision which led to smooth funding procedures. Before finalizing the project and the program, a new phase has been negotiated with the UK-DHSC: InnoVet-AMR 2.0. A component of this new program will be to continue funding the projects of InnoVet-AMR1.0 within a second phase. This project will be able to apply for a phase 2 funding in this new phase of funding.
+
+## Director comments
+
+The relevant Program Division or Regional Director should provide specific comments on the project, and to formally approve the report and its contents.
+
+As presented by the PO and in the PL comments, this PCR summarizes the successful completion of the "Developing pituitary adenylate cyclase-activating polypeptide into a treatment for microbial infections in fish and shrimp aquaculture." This project has made significant contributions to aquaculture, particularly in providing an alternative treatment to antibiotics. This project is an example of the one health approach IDRC is taking with the DHSC of the UK in building healthier, more sustainable food systems by reducing the excessive use of antimicrobials in animal production. The project has also generated important information and resources that can be utilized for future funding applications, advancing knowledge in several areas, including molecular genetics, pathology, immunology, and microbiology.
+
+Some strategic lessons for future similar interventions include developing proper research support packages, including training on technology, regulatory, intellectual property, quality assurance, marketing/commercialization, and gender. It is also important to have risk mitigation strategies in place, as unforeseen risks such as the COVID-19 pandemic impacted the execution of project activities. Overall, the project has laid a strong foundation for future work in developing alternatives to antibiotics in the veterinary sector.
+
+I approve this PCR
+
+Santiago Alba-Corral
+
+Director CRFS
+
+Last Revised March 2021
+
+--- Page 7 ---
+
+PROJECT COMPLETION REPORT
+
+IDRC·CRDI
+
+# Action Items / Next Steps
+
+Click here to enter text.
+
+# Distribution list
+
+Specify individuals with whom this PCR should be shared. At a minimum, the report should be shared with the program team, Director of Program Division, Executive Assistant to the Director of Program Division, relevant Regional Director, Vice-President Programs, Executive Assistant to the Vice-President Programs, Grants Administration Officer, Senior Programs Advisor of Strategy Regions and Policy, Manager for Monitoring Evaluation and Learning
+
+Click here to enter text.
+
+# Notes
+
+- Any key documents can be included as an annex.
+- Project completion reports are internal and confidential documents.
+
+Last Revised March 2021
