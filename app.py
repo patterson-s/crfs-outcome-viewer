@@ -128,16 +128,18 @@ with st.sidebar:
     st.header("Document Selection")
     
     def normalize_cohort_name(cohort: str) -> str:
-        if not cohort or cohort == 'LVIF':
-            return cohort or 'Unknown'
+        if not cohort:
+            return 'Unknown'
+        if cohort == 'LVIF':
+            return cohort
         if '(probable)' not in cohort:
             return f"{cohort} (probable)"
         return cohort
-
+    
     for doc in documents:
         doc['cohort'] = normalize_cohort_name(doc.get('cohort'))
-
-    all_cohorts = sorted(list(set(d['cohort'] for d in documents if d.get('cohort'))))
+    
+    all_cohorts = sorted(list(set(d['cohort'] for d in documents)))
     cohort_options = ["All"] + all_cohorts
     
     selected_cohort = st.selectbox("Filter by Cohort", options=cohort_options)
