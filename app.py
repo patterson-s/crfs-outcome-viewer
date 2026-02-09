@@ -86,7 +86,7 @@ def build_document_html(markdown_text: str, active_outcome: Dict = None) -> str:
     
     if active_outcome:
         quotes = active_outcome.get('quotes', [])
-        color = OUTCOME_COLORS.get(active_outcome['outcome_type'], '#FFFF00')
+        color = OUTCOME_COLORS.get(active_outcome.get('outcome_type', ''), '#FFFF00')
         
         for idx, quote in enumerate(quotes):
             quote_id = f"quote_{idx}"
