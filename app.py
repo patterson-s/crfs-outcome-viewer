@@ -31,11 +31,13 @@ def load_dataset(dataset_path: Path) -> List[Dict]:
         return json.load(f)
 
 def normalize_filename(filename: str) -> str:
-    name = filename.rsplit('.', 1)[0]
-    name = name.replace('_', ' ')
-    name = name.replace('[1]', '').replace('[2]', '')
+    import re
+    name = filename.rsplit(".", 1)[0]
+    name = name.replace("_", " ")
+    name = name.replace("[1]", "").replace("[2]", "")
+    name = re.sub(r"(PCR)(\d)", r"\1 \2", name)
     name = name.strip()
-    return name + '.md'
+    return name + ".md"
 
 def load_markdown_document(cohort_raw: str, filename: str, source_folder: str = None) -> str:
     base_path = MARKDOWN_PATHS.get(cohort_raw)
