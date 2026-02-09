@@ -45,9 +45,16 @@ def load_markdown_document(cohort_raw: str, filename: str, source_folder: str = 
     st.write(f"DEBUG: base_path from cohort_raw={base_path}")
     
     if not base_path and source_folder:
-        folder_name = Path(source_folder).name
+        # Extract just the folder name from the path
+        if '\\' in source_folder:
+            folder_name = source_folder.split('\\')[-1]  # Windows path
+        elif '/' in source_folder:
+            folder_name = source_folder.split('/')[-1]   # Unix path
+        else:
+            folder_name = source_folder
+            
         base_path = MARKDOWN_PATHS.get(folder_name)
-        st.write(f"DEBUG: folder_name={folder_name}, base_path from folder_name={base_path}")
+        st.write(f"DEBUG: extracted folder_name={folder_name}, base_path={base_path}")
     
     if not base_path:
         st.write(f"DEBUG: base_path is None, returning None")
