@@ -39,34 +39,52 @@ def normalize_filename(filename: str) -> str:
     return name + ".md"
 
 def load_markdown_document(cohort_raw: str, filename: str, source_folder: str = None) -> str:
+    st.write(f"DEBUG: cohort_raw={cohort_raw}, filename={filename}, source_folder={source_folder}")
+    
     base_path = MARKDOWN_PATHS.get(cohort_raw)
+    st.write(f"DEBUG: base_path from cohort_raw={base_path}")
     
     if not base_path and source_folder:
         folder_name = Path(source_folder).name
         base_path = MARKDOWN_PATHS.get(folder_name)
+        st.write(f"DEBUG: folder_name={folder_name}, base_path from folder_name={base_path}")
     
-    if not base_path or not base_path.exists():
+    if not base_path:
+        st.write(f"DEBUG: base_path is None, returning None")
         return None
+        
+    if not base_path.exists():
+        st.write(f"DEBUG: base_path does not exist: {base_path}")
+        return None
+    
+    st.write(f"DEBUG: base_path exists: {base_path}")
     
     md_filename = filename.rsplit('.', 1)[0] + '.md'
     md_path = base_path / md_filename
+    st.write(f"DEBUG: looking for md_path={md_path}")
     
     if md_path.exists():
+        st.write(f"DEBUG: found exact match at {md_path}")
         with open(md_path, 'r', encoding='utf-8') as f:
             return f.read()
     
     normalized_filename = normalize_filename(filename)
     normalized_path = base_path / normalized_filename
+    st.write(f"DEBUG: looking for normalized_path={normalized_path}")
     
     if normalized_path.exists():
+        st.write(f"DEBUG: found normalized match at {normalized_path}")
         with open(normalized_path, 'r', encoding='utf-8') as f:
             return f.read()
     
+    st.write(f"DEBUG: searching all .md files in {base_path}")
     for md_file in base_path.glob('*.md'):
         if normalize_filename(md_file.name) == normalized_filename:
+            st.write(f"DEBUG: found via glob match: {md_file}")
             with open(md_file, 'r', encoding='utf-8') as f:
                 return f.read()
     
+    st.write(f"DEBUG: no markdown file found after all attempts")
     return None
 
 def highlight_quote_in_text(text: str, quote: str, color: str, quote_id: str) -> str:
