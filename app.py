@@ -129,15 +129,14 @@ with st.sidebar:
     
     def normalize_cohort_name(cohort: str) -> str:
         if not cohort or cohort == 'LVIF':
-            return cohort
+            return cohort or 'Unknown'
         if '(probable)' not in cohort:
             return f"{cohort} (probable)"
         return cohort
-    
+
     for doc in documents:
-        if doc.get('cohort'):
-            doc['cohort'] = normalize_cohort_name(doc['cohort'])
-    
+        doc['cohort'] = normalize_cohort_name(doc.get('cohort'))
+
     all_cohorts = sorted(list(set(d['cohort'] for d in documents if d.get('cohort'))))
     cohort_options = ["All"] + all_cohorts
     
