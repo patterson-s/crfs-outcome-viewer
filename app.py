@@ -362,4 +362,4 @@ with col2:
                     if outcome.get('quotes'):
                         st.markdown("**Quotes:**")
                         for quote in outcome['quotes']:
-                            st.info(quote)
+                            st.info(quote)"# Cache bust" 
