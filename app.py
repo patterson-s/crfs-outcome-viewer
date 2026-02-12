@@ -4,6 +4,22 @@ from pathlib import Path
 from typing import Dict, List
 import re
 
+if 'authenticated' not in st.session_state:
+    st.session_state.authenticated = False
+
+if not st.session_state.authenticated:
+    st.title("CRFS Outcomes Viewer - Login")
+    password_input = st.text_input("Enter password:", type="password")
+    
+    if st.button("Login"):
+        if password_input == st.secrets["password"]:
+            st.session_state.authenticated = True
+            st.rerun()
+        else:
+            st.error("Incorrect password")
+    
+    st.stop()
+
 OUTCOME_COLORS = {
     'Knowledge Production': '#E3F2FD',
     'Development and Testing of Innovations': '#BBDEFB',
